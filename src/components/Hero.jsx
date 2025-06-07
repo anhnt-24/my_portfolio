@@ -1,20 +1,23 @@
 import { Typewriter } from 'react-simple-typewriter';
 import { FaGithub, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import ParticlesBackground from './ParticlesBackground'; // import component particles nền
 
 export default function Hero() {
 	return (
-		<section id='hero' className='min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-24 py-12 bg-green-50'>
-			{/* Bên trái: Lời chào và social */}
-			<div className='md:w-1/2 text-center md:text-left mb-10 md:mb-0'>
-				{/* Nút mạng xã hội */}
+		<section id='home' className='relative min-h-screen lg:px-54 flex flex-col md:flex-row items-center justify-between px-6 md:px-24 py-12  overflow-hidden'>
+			{/* Thêm particles nền */}
+			<div className='absolute top-0 bottom-0 left-0 right-0'>
+				<ParticlesBackground />
+			</div>
 
+			<div className='md:w-1/2 text-center md:text-left mb-10 md:mb-0  z-10'>
 				<h2 className='text-4xl md:text-5xl font-bold text-green-700 mb-4'>Xin chào! Mình là</h2>
-				<h1 className='text-5xl md:text-6xl font-extrabold text-primary mb-4'>Nguyễn Văn A</h1>
+				<h1 className='text-5xl md:text-6xl font-extrabold text-primary mb-4'>Nguyễn Tuấn Anh</h1>
 
 				<p className='text-xl text-gray-700 mb-6'>
 					Tôi muốn trở thành:{' '}
 					<span className='text-primary font-semibold'>
-						<Typewriter words={['Backend Developer', 'Fullstack Developer', 'Frontend Developer']} loop={true} cursor cursorStyle='|' typeSpeed={70} deleteSpeed={50} delaySpeed={1500} />
+						<Typewriter words={['Frontend Developer', 'Backend Developer', 'Fullstack Developer']} loop={true} cursor cursorStyle='|' typeSpeed={70} deleteSpeed={50} delaySpeed={1500} />
 					</span>
 				</p>
 
@@ -39,8 +42,8 @@ export default function Hero() {
 			</div>
 
 			{/* Bên phải: Ảnh đại diện */}
-			<div className='md:w-1/2 flex justify-center'>
-				<img src='/Avatar.jpg' alt='Developer' className='w-72 h-72 md:w-80 md:h-80 rounded-full shadow-lg object-cover' />
+			<div className='md:w-1/2 flex justify-center relative z-10'>
+				<img src='/Avatar.jpg' alt='Developer' className='lg:w-100 lg:h-100 md:w-80 md:h-80 rounded-full shadow-lg object-cover' />
 			</div>
 		</section>
 	);

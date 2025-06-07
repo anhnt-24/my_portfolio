@@ -7,7 +7,6 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import FadeInWhenVisible from './components/FadeInWhenVisible';
 import Education from './components/Education';
-import Awards from './components/Awards';
 
 export default function App() {
 	return (

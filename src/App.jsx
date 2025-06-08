@@ -14,17 +14,23 @@ export default function App() {
 		<div>
 			<ScrollToTopButton />
 			<Header />
+
 			<FadeInWhenVisible>
 				<Hero />
 			</FadeInWhenVisible>
+
 			<FadeInWhenVisible>
 				<About />
 			</FadeInWhenVisible>
+
 			<FadeInWhenVisible>
 				<Skills />
 			</FadeInWhenVisible>
 
-			<Education></Education>
+			<FadeInWhenVisible>
+				<Education />
+			</FadeInWhenVisible>
+
 			<FadeInWhenVisible>
 				<Projects />
 			</FadeInWhenVisible>

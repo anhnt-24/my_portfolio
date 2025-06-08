@@ -96,7 +96,7 @@ const Contact = () => {
 									required></textarea>
 							</div>
 
-							<button type='submit' className='w-full bg-green-600 text-white py-3 px-6 rounded-lg font-medium hover:bg-green-700 transition-all shadow-md hover:shadow-lg'>
+							<button type='submit' className='w-full cursor-pointer bg-green-600 text-white py-3 px-6 rounded-lg font-medium hover:bg-green-700 transition-all shadow-md hover:shadow-lg'>
 								Gửi tin nhắn
 								<svg xmlns='http://www.w3.org/2000/svg' className='h-5 w-5 inline ml-2' viewBox='0 0 20 20' fill='currentColor'>
 									<path

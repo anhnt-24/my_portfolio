@@ -7,10 +7,12 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import FadeInWhenVisible from './components/FadeInWhenVisible';
 import Education from './components/Education';
+import ScrollToTopButton from './components/ScrollToTopButton';
 
 export default function App() {
 	return (
 		<div>
+			<ScrollToTopButton />
 			<Header />
 			<FadeInWhenVisible>
 				<Hero />

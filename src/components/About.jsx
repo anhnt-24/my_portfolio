@@ -1,13 +1,13 @@
 import React from 'react';
-import { FiMail, FiPhone, FiAward, FiCode, FiUser } from 'react-icons/fi';
+import { FiMail, FiPhone, FiAward, FiCode, FiUser, FiMapPin } from 'react-icons/fi';
 
 const About = () => {
 	return (
-		<section id='about' className='py-20 px-4 sm:px-6 bg-gradient-to-b from-white to-green-50'>
+		<section id='about' className='py-20 px-4 sm:px-6 '>
 			<div className='max-w-6xl mx-auto'>
 				<div className='text-center mb-16'>
 					<h2 className='text-4xl font-bold text-gray-900 mb-4'>Về Tôi</h2>
-					<p className='text-lg text-gray-600 max-w-2xl mx-auto'>Chuyên gia Frontend với đam mê tạo ra trải nghiệm người dùng tuyệt vời</p>
+					<p className='text-lg text-gray-600 max-w-4xl mx-auto'> Làm web không chỉ là viết code — đó là hành trình tạo nên trải nghiệm khiến người dùng mỉm cười.</p>
 				</div>
 
 				<div className='flex flex-col lg:flex-row items-center gap-12'>
@@ -16,7 +16,7 @@ const About = () => {
 						<div className='relative group'>
 							<img src='/coder.jpg' alt='Profile' className='w-72 h-72 object-cover rounded-2xl shadow-xl border-4 border-white group-hover:border-green-500 transition-all duration-500' />
 							<div className='absolute -bottom-6 -right-6 bg-green-600 text-white px-6 py-2 rounded-lg shadow-md'>
-								<span className='font-medium'>3+ năm kinh nghiệm</span>
+								<span className='font-medium'>Sinh viên năm 3+</span>
 							</div>
 						</div>
 					</div>
@@ -31,34 +31,24 @@ const About = () => {
 
 							<div className='space-y-4 text-gray-700'>
 								<p>
-									Tôi là một <span className='font-medium text-green-600'>Frontend Developer</span> với hơn 3 năm kinh nghiệm trong việc xây dựng các ứng dụng web hiện đại. Tôi tập trung vào việc tạo
-									ra các giao diện người dùng đẹp mắt, hiệu suất cao và trải nghiệm mượt mà.
+									Mình là một <span className='font-medium text-green-600'>sinh viên năm 3</span> đam mê phát triển web, định hướng trở thành Fullstack Developer trong tương lai. Mình yêu thích việc
+									tạo ra những sản phẩm có giao diện thân thiện và trải nghiệm mượt mà cho người dùng.
 								</p>
 								<p>
-									Với kiến thức chuyên sâu về <span className='font-medium'>React, Next.js và Tailwind CSS</span>, tôi luôn cập nhật những công nghệ mới nhất để mang lại giải pháp tối ưu cho mọi dự
-									án.
+									Hiện tại, mình đang học và thực hành với <span className='font-medium'>Spring Boot, React, NodeJs</span>. Mình luôn tìm cách cập nhật công nghệ mới để làm việc hiệu quả hơn và xây
+									dựng giải pháp chất lượng.
 								</p>
-								<p>Niềm đam mê của tôi là biến những ý tưởng phức tạp thành các sản phẩm đơn giản, dễ sử dụng nhưng mạnh mẽ về chức năng.</p>
+								<p>Với mình, lập trình không chỉ là công việc, mà còn là cách để biến ý tưởng thành sản phẩm thực tế, đơn giản, dễ dùng và hữu ích cho người khác.</p>
 							</div>
 
-							<div className='mt-8 grid grid-cols-1 md:grid-cols-2 gap-6'>
+							<div className='mt-8 grid grid-cols-1 gap-6'>
 								<div className='flex items-start'>
 									<div className='bg-green-100 p-3 rounded-full mr-4'>
 										<FiCode className='text-green-600 text-xl' />
 									</div>
 									<div>
 										<h4 className='font-bold text-gray-800 mb-1'>Kỹ năng chính</h4>
-										<p className='text-gray-600'>React, JavaScript, Tailwind, UI/UX Design</p>
-									</div>
-								</div>
-
-								<div className='flex items-start'>
-									<div className='bg-green-100 p-3 rounded-full mr-4'>
-										<FiAward className='text-green-600 text-xl' />
-									</div>
-									<div>
-										<h4 className='font-bold text-gray-800 mb-1'>Chứng chỉ</h4>
-										<p className='text-gray-600'>Frontend Developer Certified (Meta)</p>
+										<p className='text-gray-600'>Spring Boot, React, NodeJs</p>
 									</div>
 								</div>
 							</div>
@@ -69,8 +59,8 @@ const About = () => {
 										<FiMail className='text-green-600 mr-3 text-xl' />
 										<div>
 											<p className='text-sm text-gray-500'>Email</p>
-											<a href='mailto:nguyenvana@example.com' className='text-gray-800 hover:text-green-600 transition-colors font-medium'>
-												nguyenvana@example.com
+											<a href='mailto:anhnt204.dev@gmail.com' className='text-gray-800 hover:text-green-600 transition-colors font-medium'>
+												anhnt204.dev@gmail.com
 											</a>
 										</div>
 									</div>
@@ -80,8 +70,15 @@ const About = () => {
 										<div>
 											<p className='text-sm text-gray-500'>Điện thoại</p>
 											<a href='tel:0123456789' className='text-gray-800 hover:text-green-600 transition-colors font-medium'>
-												0123 456 789
+												0389 801 058
 											</a>
+										</div>
+									</div>
+									<div className='flex items-center'>
+										<FiMapPin className='text-green-600 mr-3 text-xl' />
+										<div>
+											<p className='text-sm text-gray-500'>Địa chỉ</p>
+											<p className='text-gray-800 font-medium'>Trung văn, Nam Từ Liêm, Hà Nội</p>
 										</div>
 									</div>
 								</div>
